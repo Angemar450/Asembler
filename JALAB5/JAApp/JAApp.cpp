@@ -32,8 +32,8 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     LoadStringW(hInstance, IDC_JAAPP, szWindowClass, MAX_LOADSTRING);
     MyRegisterClass(hInstance);
 
-	/*int x = 3, y = 4, z = 0;
-	z = MyProc1(x, y);*/
+	int x = 3, y = 4, z = 0;
+	z = MyProc1(x, y);
 
     // Perform application initialization:
     if (!InitInstance (hInstance, nCmdShow))
@@ -180,4 +180,9 @@ INT_PTR CALLBACK About(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam)
         break;
     }
     return (INT_PTR)FALSE;
+}
+
+int MyProc1(DWORD x, DWORD y)
+{
+	return 0;
 }
